@@ -20,7 +20,7 @@ FormSchema.statics = {
   },
   /**创建 */
   async createForm(data = {}) {
-    const result = await this.createForm(data);
+    const result = await this.create(data);
     return result;
   },
   /**总页数 */

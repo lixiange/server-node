@@ -12,5 +12,5 @@ export default {
   port: 4000,
   secret: "liuheng9227fe78182er",
   serverHost: 'http://xjserver.site:4000',
-  proxy_serverHost:'https://xjserver.site:9000' //https转发到http,防止跨域
+  proxy_serverHost:'https://xjserver.site:9000' //nginx将https转发到http,防止跨域
 };

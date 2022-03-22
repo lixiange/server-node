@@ -15,11 +15,8 @@ class ArticleController {
     // console.log(user);
     try {
       const data = ctx.request.body;
-      console.log(data)
     //   const checkBool = await this.checkArtparam(data);
       let length = await FormModel.countNum();
-      console.log(length)
-      console.log(data)
       if (data) {
         const d = await FormModel.create({
           data: data,
@@ -46,7 +43,6 @@ class ArticleController {
 
   async getForm(ctx) {
     const id = ctx.request.query.formId;
-    console.log(id);
     try {
       if (id) {
         let result = await FormModel.findForm({id});
